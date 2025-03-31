@@ -1,10 +1,14 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>VAYANSE A LA PORRA</Text>
+      <Image 
+        source={require('./local-image.png')} 
+        style={styles.image}
+      />
+      <Text style={styles.text}>Hola</Text>
     </View>
   );
 }
@@ -19,5 +23,11 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 24,
     fontWeight: 'bold',
+    marginTop: 20
   },
+  image: {
+    width: 100,
+    height: 100,
+    borderRadius: 50
+  }
 });
